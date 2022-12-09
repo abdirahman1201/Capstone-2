@@ -1,0 +1,31 @@
+{% extends 'layout.html'%}
+
+
+{%block content%}
+        <div class="container">
+          <div class="">
+            <div>
+              <h1>How to Download and Install  <span class="text-warning"> Harran </span></h1>
+              <p class="text-start">
+                1. Download the files using the link provided<br>
+                2. Change the path in files, "vbs" and "bat" to where both files are located on your machine<br>
+                3. Open "app.py" and scroll down until you the see the variables "Email" and "Password", replace the default values with your email and password<br>
+                4. Place a shortcut of "vbs" file in startup folder.<br>
+                5. Restart your machine.
+              </p>
+          </div>
+        </div>
+        
+      </section>
+      <div class="d-flex justify-content-center m-2">
+        <a href="https://drive.google.com/uc?export=download&id=1j3SS7yZ_eYv0AWzda8szSOIjY2rQYhtP" download="capstone">
+            <button type="button" class="btn btn-primary">Download</button>
+        </a>
+      </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="{{url_for('static', filename= 'main.js')}}"> </script>
+{%endblock content%}
+
